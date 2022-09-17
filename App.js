@@ -1,25 +1,20 @@
 import { useState } from "react";
-import {
-  StyleSheet,
-  View,
-  FlatList,
-} from "react-native";
+import { StyleSheet, View, FlatList } from "react-native";
 import GoalItem from "./components/GoalItem";
 import GoalInput from "./components/GoalInput";
 
 export default function App() {
-
   const [courseGoals, setCourseGoals] = useState([]);
 
   function addGoalHandler(enteredGoalText) {
     setCourseGoals((currentCourseGoal) => [
       ...currentCourseGoal,
-      enteredGoalText,
+      { text: enteredGoalText, id: Math.random().toString() },
     ]);
   }
   function deleteGoalHandler(id) {
-    setCourseGoals(currentCourseGoals => {
-      return currentCourseGoals.filter();
+    setCourseGoals((currentCourseGoals) => {
+      return currentCourseGoals.filter((goal) => goal.id !== id);
     });
   }
 
@@ -31,21 +26,22 @@ export default function App() {
           data={courseGoals}
           renderItem={(itemData) => {
             return (
-              <GoalItem text={itemData.item.text} onDeleteItem={deleteGoalHandler} />
+              <GoalItem
+                text={itemData.item.text}
+                id={itemData.item.id}
+                onDeleteItem={deleteGoalHandler}
+              />
             );
           }}
-
+          keyExtractor={(item, index) => {
+            return item.id;
+          }}
           alwaysBounceVertical={false}
         />
       </View>
     </View>
   );
 }
-
-
-
-
-
 
 const styles = StyleSheet.create({
   appContainer: {
@@ -56,6 +52,5 @@ const styles = StyleSheet.create({
 
   goalsContanier: {
     flex: 5,
-  }
-
+  },
 });
