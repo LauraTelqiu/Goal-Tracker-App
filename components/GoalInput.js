@@ -18,13 +18,13 @@ const GoalInput = (props) => {
         <Image style={styles.image} source={require("../assets/images/goal.png")} />
         <TextInput
           style={styles.textInput}
-          placeholder="Your goal!"
+          placeholder="Your course goal!"
           onChangeText={goalInputHandler}
           value={enteredGoalText}
         />
         <View style={styles.buttonContanier}>
           <View style={styles.button}>
-            <Button title="Add Goal" onPress={addGoalHandler} color="#575656" />
+            <Button title="Add Goal" onPress={addGoalHandler} color="#b180f0" />
           </View>
           <View style={styles.button}>
             <Button title="Cancel" onPress={props.onCancel} color="#f31282" />
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     padding: 16,
-    backgroundColor: "#f6b25e"
+    backgroundColor: "#311b6b"
   },
   image: {
     width: 100,
@@ -51,8 +51,8 @@ const styles = StyleSheet.create({
   },
   textInput: {
     borderWidth: 1,
-    borderColor: "#fad09c",
-    backgroundColor: "#f4d0a4",
+    borderColor: "#e4d0ff",
+    backgroundColor: "#e4d0ff",
     color: "#120438",
     borderRadius: 6,
     width: "100%",

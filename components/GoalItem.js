@@ -21,13 +21,13 @@ const styles = StyleSheet.create({
   golaItem: {
     margin: 8,
     borderRadius: 6,
-    backgroundColor: "#f69825",
+    backgroundColor: "#5e0acc",
   },
   pressedItem: {
     opacity: 0.5,
   },
   goalText: {
-    color: "black",
+    color: "white",
     padding: 8,
   },
 });

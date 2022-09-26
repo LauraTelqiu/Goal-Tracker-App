@@ -30,11 +30,11 @@ export default function App() {
 
   return (
     <>
-      <StatusBar style="dark" />
+      <StatusBar style="light" />
       <View style={styles.appContainer}>
         <Button
           title="Add New Goal"
-          color="black"
+          color="#a065ec"
           onPress={startAddGoalHandler}
         />
 
@@ -67,7 +67,6 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 50,
     paddingHorizontal: 16,
-    backgroundColor: "#f6b25e"
   },
 
   goalsContanier: {
