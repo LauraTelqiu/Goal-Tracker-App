@@ -1,3 +1,3 @@
 # Goal Tracker App
 
-### React Native App which allows users to track goals. A list of goals to open a model and add new goals. Once the goal is added can be tapped to be removed.
+### React Native App that helps individuals set and monitor progress towards specific goals. It can be used to track progress on tasks, projects, or long-term objectives, and can include features such as progress tracking, task assignment, deadline reminders, and progress reporting.
