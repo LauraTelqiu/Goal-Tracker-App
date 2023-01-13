@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "rn",
-    "slug": "rn",
+    "name": "Goal-Tracker",
+    "slug": "Goal-Tracker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "backgroundColor": "#1e085a",
+    "backgroundColor": "#f6b25e",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -15,7 +15,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
+    "assetBundlePattes": [
       "**/*"
     ],
     "ios": {
